@@ -1,19 +1,15 @@
 import { GlobalConfig } from 'payload/types';
 
 const Homepage: GlobalConfig = {
-    slug: 'homepageContent',
-    admin: {
-        description: 'Homepage content',
-        group: 'Homepage',
-    },
+    slug: 'homepage',
     fields: [
         {
-            name: 'Header',
+            name: 'header',
             type: 'richText',
         },
         {
-            name: 'Intro',
-            type: 'richText',
+            name: 'subheader',
+            type: 'text',
         },
     ],
 };

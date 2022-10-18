@@ -6,6 +6,7 @@ import Posts from './collections/Posts';
 import Homepage from './collections/Homepage';
 import HomepageTiles from './collections/HomepageTiles';
 import Media from './collections/Media';
+import about from './collections/About';
 
 export default buildConfig({
     // By default, Payload will boot up normally
@@ -18,13 +19,13 @@ export default buildConfig({
     collections: [
         Users,
         Posts,
-        HomepageTiles,
         Media,
+
         // Add Collections here
         // Examples,
     ],
     // globals are a single-instance collection, often used for navigation or site settings that live in one place
-    globals: [Homepage],
+    globals: [Homepage, about],
 
     typescript: {
         outputFile: path.resolve(__dirname, 'payload-types.ts'),
