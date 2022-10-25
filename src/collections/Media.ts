@@ -28,7 +28,7 @@ const Media: CollectionConfig = {
         staticDir: path.resolve(__dirname, '../../media'),
 
         // limit the types of files allowed and request validation
-        mimeTypes: ['image/png', 'image/jpeg'],
+        mimeTypes: ['image/*', 'application/pdf'],
 
         // in addition to the original file, Payload saves resized images automatically
         imageSizes: [
