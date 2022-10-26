@@ -34,6 +34,14 @@ export default buildConfig({
     },
     graphQL: {
         schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
+        maxComplexity: 3,
     },
     telemetry: false,
+    /**
+     * https://payloadcms.com/docs/production/preventing-abuse
+     */
+    rateLimit: {
+        window: 60000,
+        max: 3,
+    },
 });

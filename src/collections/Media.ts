@@ -8,9 +8,9 @@ const Media: CollectionConfig = {
         read: () => true,
 
         // access is limited for demo purposes, remove to restore upload capability
-        create: () => true,
-        update: () => true,
-        delete: () => true,
+        // create: () => true,
+        // update: () => true,
+        // delete: () => true,
     },
     admin: {
         useAsTitle: 'filename',
