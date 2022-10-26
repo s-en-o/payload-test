@@ -7,6 +7,7 @@ import Homepage from './collections/Homepage';
 import Media from './collections/Media';
 import About from './collections/About';
 import Contact from './collections/Contact';
+import Navigation from './collections/Navigation';
 
 export default buildConfig({
     // By default, Payload will boot up normally
@@ -20,6 +21,7 @@ export default buildConfig({
         Users,
         Posts,
         Media,
+        Navigation,
 
         // Add Collections here
         // Examples,
