@@ -9,7 +9,6 @@ const BlockHeader: Block = {
         {
             name: 'header',
             type: 'text',
-            required: true,
         },
         {
             name: 'subheader',
